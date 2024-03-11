@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.menu a {
+    margin-right: 5px;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid gray;
+}
+
+.menu a:hover {
+    background-color: wheat;
+}
+
+.menu a.active {
+    background-color: transparent;
+    background: whitesmoke;
+}
+
+.tabs .tab:not(.active) {
+    display: none;
+}
+
+.tabs .tab {
+    padding: 10px;
+    background-color: whitesmoke;
+    height: 300px;
+}

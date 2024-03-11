@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.keyboard {
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.keyboard__row {
+    display: flex;
+    gap: 10px;
+}
+
+.keyboard>.keyboard__row:last-child>.key {
+    width: 100%;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.562);
+}
+
+#insideKeyboard {
+    width: 50%;
+    padding: 10px;
+}
